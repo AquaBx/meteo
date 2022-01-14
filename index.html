@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="style.css">
+<div class="carte">
+<?php
+
+            $fichier = json_decode(file_get_contents("https://aquabx.ovh/api/weather.php"));
+            $brest = $fichier->{"brest"};
+            $rennes = $fichier->{"rennes"};
+            $nantes = $fichier->{"nantes"};
+            $rouen = $fichier->{"rouen"};
+            $lille = $fichier->{"lille"};
+            $paris = $fichier->{"paris"};
+            $bordeaux = $fichier->{"bordeaux"};
+            $strasbourg = $fichier->{"strasbourg"};
+            $nancy = $fichier->{"nancy"};
+            $dijon = $fichier->{"dijon"};
+            $orleans = $fichier->{"orleans"};
+            $tours = $fichier->{"tours"};
+            $lyon = $fichier->{"lyon"};
+            $grenoble = $fichier->{"grenoble"};
+            $marseille = $fichier->{"marseille"};
+            $montpellier = $fichier->{"montpellier"};
+            $toulouse = $fichier->{"toulouse"};
+            $clermontferrand = $fichier->{"clermont-ferrand"};
+            $limoges = $fichier->{"limoges"};
+
+            echo "<img class='icon' alt='' style='margin:11.5vw 0 0 20.5vw' src=./weather/$brest[0].svg>";
+            echo "<img class='icon' alt='' style='margin:12.25vw 0 0 24.5vw' src=./weather/$rennes[0].svg>";
+            echo "<img class='icon' alt='' style='margin:15.5vw 0 0 26.5vw' src=./weather/$nantes[0].svg>";
+            echo "<img class='icon' alt='' style='margin:8vw 0 0 32.5vw' src=./weather/$rouen[0].svg>";
+            echo "<img class='icon' alt='' style='margin:4.5vw 0 0 38.5vw' src=./weather/$lille[0].svg>";
+            echo "<img class='icon' alt='' style='margin:10.5vw 0 0 37vw' src=./weather/$paris[0].svg>";
+            echo "<img class='icon' alt='' style='margin:22vw 0 0 29vw' src=./weather/$bordeaux[0].svg>";
+            echo "<img class='icon' alt='' style='margin:10.5vw 0 0 49.5vw' src=./weather/$strasbourg[0].svg>";
+            echo "<img class='icon' alt='' style='margin:10.5vw 0 0 45vw' src=./weather/$nancy[0].svg>";
+            echo "<img class='icon' alt='' style='margin:15vw 0 0 44vw' src=./weather/$dijon[0].svg>";
+            echo "<img class='icon' alt='' style='margin:14vw 0 0 35vw' src=./weather/$orleans[0].svg>";
+            echo "<img class='icon' alt='' style='margin:15.5vw 0 0 31vw' src=./weather/$tours[0].svg>";
+            echo "<img class='icon' alt='' style='margin:20vw 0 0 43vw' src=./weather/$lyon[0].svg>";
+            echo "<img class='icon' alt='' style='margin:22vw 0 0 47vw' src=./weather/$grenoble[0].svg>";
+            echo "<img class='icon' alt='' style='margin:27vw 0 0 46vw' src=./weather/$marseille[0].svg>";
+            echo "<img class='icon' alt='' style='margin:26.75vw 0 0 41.5vw' src=./weather/$montpellier[0].svg>";
+            echo "<img class='icon' alt='' style='margin:26.75vw 0 0 34vw' src=./weather/$toulouse[0].svg>";
+            echo "<img class='icon' alt='' style='margin:20vw 0 0 37.75vw' src=./weather/$clermontferrand[0].svg>";
+            echo "<img class='icon' alt='' style='margin:20vw 0 0 33.5vw' src=./weather/$limoges[0].svg>";
+            ?>
+        </div>
+
+        <div class="carte">
+            <?php
+            echo "<p class='temp' style='margin:11.5vw 0 0 20.5vw'>$brest[1]</p>";
+            echo "<p class='temp' style='margin:12.25vw 0 0 24.5vw'>$rennes[1]</p>";
+            echo "<p class='temp' style='margin:15.5vw 0 0 26.5vw'>$nantes[1]</p>";
+            echo "<p class='temp' style='margin:8vw 0 0 32.5vw'>$rouen[1]</p>";
+            echo "<p class='temp' style='margin:4.5vw 0 0 38.5vw'>$lille[1]</p>";
+            echo "<p class='temp' style='margin:10.5vw 0 0 37vw'>$paris[1]</p>";
+            echo "<p class='temp' style='margin:22vw 0 0 29vw'>$bordeaux[1]</p>";
+            echo "<p class='temp' style='margin:10.5vw 0 0 49.5vw'>$strasbourg[1]</p>";
+            echo "<p class='temp' style='margin:10.5vw 0 0 45vw'>$nancy[1]</p>";
+            echo "<p class='temp' style='margin:15vw 0 0 44vw'>$dijon[1]</p>";
+            echo "<p class='temp' style='margin:14vw 0 0 35vw'>$orleans[1]</p>";
+            echo "<p class='temp' style='margin:15.5vw 0 0 31vw'>$tours[1]</p>";
+            echo "<p class='temp' style='margin:20vw 0 0 43vw'>$lyon[1]</p>";
+            echo "<p class='temp' style='margin:22vw 0 0 47vw'>$grenoble[1]</p>";
+            echo "<p class='temp' style='margin:27vw 0 0 46vw'>$marseille[1]</p>";
+            echo "<p class='temp' style='margin:26.75vw 0 0 41.5vw'>$montpellier[1]</p>";
+            echo "<p class='temp' style='margin:26.75vw 0 0 34vw'>$toulouse[1]</p>";
+            echo "<p class='temp' style='margin:20vw 0 0 37.75vw'>$clermontferrand[1]</p>";
+            echo "<p class='temp' style='margin:20vw 0 0 33.5vw'>$limoges[1]</p>";
+            ?>
+</div>
