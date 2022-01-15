@@ -10,13 +10,13 @@
 <script type="module">
     var villes = [["brest","29200","265","795"], ["rennes","35000","310","805"], ["nantes","44000","340","850"], ["rouen","76000","400","760"], ["lille","59000","460","730"], ["paris","75000","440","790"], ["bordeaux","33000","360","910"], ["strasbourg","67000","580","790"], ["nancy","54000","530","790"], ["dijon","21000","515","835"], ["orleans","45000","420","825"], ["tours","37000","385","850"], ["lyon","69001","500","890"], ["grenoble","38000","560","900"], ["marseille","13000","530","960"], ["montpellier","34000","490","965"], ["toulouse","31000","410","960"], ["clermont-ferrand","63000","455","890"], ["limoges","87000","410","890"]]
     for (var ville of villes) {
-    	var url = "http://api.openweathermap.org/data/2.5/weather?zip="+ville[1]+",FR&appid=7fb0c303e53d50ff7e918f31385fff76&units=metric";
+    	var url = "https://api.openweathermap.org/data/2.5/weather?zip="+ville[1]+",FR&appid=7fb0c303e53d50ff7e918f31385fff76&units=metric";
 
     	var json = await fetch(url);
     	var json_data = await json.json()
         //var img = json_data["main"]["temp"]
         var img = document.createElementNS('http://www.w3.org/2000/svg','image');
-        img.setAttribute("href","http://aquabx.ovh/weather/" + json_data["weather"][0]["icon"] + ".svg")
+        img.setAttribute("href","https://aquabx.ovh/weather/" + json_data["weather"][0]["icon"] + ".svg")
         img.setAttribute("width","60")
         img.setAttribute("height","60")
         img.setAttribute("x",ville[2])
