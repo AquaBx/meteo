@@ -1,8 +1,6 @@
 .carte{
     font-family: 'Poppins', sans-serif;
     background: url("//aquabx.ovh/carte.svg") 4% 79%;
-    width:60vw;
-    height:40vw;
     background-size: 180vw 120vw;
     margin : auto;
     border:5px solid black;
@@ -23,3 +21,5 @@
     line-height : 6vw;
 	color:white;
 }
+
+body{margin:none;}
