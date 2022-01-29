@@ -18,7 +18,7 @@
     	var json_data = await json.json()
         //var img = json_data["main"]["temp"]
         var img = document.createElementNS('http://www.w3.org/2000/svg','image');
-        img.setAttribute("href","/assets/" + json_data["weather"][0]["icon"] + ".svg")
+        img.setAttribute("href","assets/" + json_data["weather"][0]["icon"] + ".svg")
         img.setAttribute("width","60")
         img.setAttribute("height","60")
         img.setAttribute("x",ville[2])
